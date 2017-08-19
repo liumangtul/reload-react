@@ -1,0 +1,13 @@
+# reload-react
+# react-reloading
+重新复习一遍react相关技术栈，webpack，ES2015，redux，react-router等。
+作为学习笔记。
+
+github-fackbook react api: https://facebook.github.io/react/
+react-gitbook : https://hulufei.gitbooks.io/react-tutorial/content/component-compose.html
+社区 http://react-china.org/
+https://discountry.github.io/react/1.5K ( https://doc.react-china.org44 )
+阮一峰的 "React 入门实例教程" http://www.ruanyifeng.com/blog/2015/03/react.html28.4K
+极客学院整理的文档 http://wiki.jikexueyuan.com/project/react/23.5K
+webpack:
+    webpack-china.org
