@@ -1,0 +1,24 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "重新复习一遍react相关技术栈，webpack，ES2015，redux，react-router等。\r 作为学习笔记。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liumangtul/reload-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liumangtul/reload-react/issues"
+  },
+  "homepage": "https://github.com/liumangtul/reload-react#readme",
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "webpack": "^3.5.5"
+  }
+}
