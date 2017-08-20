@@ -4,7 +4,8 @@
   "description": "重新复习一遍react相关技术栈，webpack，ES2015，redux，react-router等。\r 作为学习笔记。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,12 @@
   },
   "homepage": "https://github.com/liumangtul/reload-react#readme",
   "devDependencies": {
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "react": "^15.6.1",
+    "style-loader": "^0.18.2",
     "webpack": "^3.5.5"
   }
 }
