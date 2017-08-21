@@ -14,7 +14,10 @@ var config = {
             title:'Output Management'
         }),
         new CleanWebpackPlugin(['dist']),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'common' // Specify the common bundle's name.
+        })
     ],
     output: {
         /*filename:'boudle.js',*/
