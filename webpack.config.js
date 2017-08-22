@@ -1,27 +1,34 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack');
 
 var config = {
     /*entry : './src/index.js',*/
     entry:{
         app:'./src/index.js',
-        print:'./src/print.js'
+        print:'./src/print.js',
+        vendors:[
+            'jquery'
+        ]
     },
     plugins:[
-        new HtmlWebpackPlugin({
-            title:'Output Management'
-        }),
         new CleanWebpackPlugin(['dist']),
+        new HtmlWebpackPlugin({
+            /*title:'Output Management'*/
+            title:'Caching'
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'common' // Specify the common bundle's name.
+           /* name: 'common' // Specify the common bundle's name.*/
+           name:'vendor'
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name:'runtime'
         })
     ],
     output: {
-        /*filename:'boudle.js',*/
-        filename:'[name].boudle.js',
+        filename:'[name].[contenthash].boudle.js',
         path: path.resolve(__dirname,'dist')
     },
     module: {
