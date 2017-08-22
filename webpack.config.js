@@ -8,7 +8,7 @@ var config = {
     entry:{
         app:'./src/index.js',
         print:'./src/print.js',
-        vendors:[
+        vendor:[
             'jquery'
         ]
     },
@@ -28,7 +28,7 @@ var config = {
         })
     ],
     output: {
-        filename:'[name].[contenthash].boudle.js',
+            filename:'[name].[hash].boudle.js',
         path: path.resolve(__dirname,'dist')
     },
     module: {
