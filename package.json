@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "react2":"webpack --config webpack-config.react2.js",
+    "react3":"webpack --config webpack-config.react3.js"
   },
   "repository": {
     "type": "git",
