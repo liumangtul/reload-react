@@ -11,6 +11,7 @@ import NumList from './component/NumList.js';
 import NameForm from './component/NameForm.js';
 import NameForm2 from './component/NameForm2.js';
 import Calculator from './component/Calculator/Calculator.js';
+import Parent from './component/BaseLearn/Parent.js';
 
 ReactDOM.render(
     <div>
@@ -23,6 +24,7 @@ ReactDOM.render(
         <NameForm></NameForm>
         <NameForm2></NameForm2>
         <Calculator></Calculator>
+        <Parent></Parent>
     </div>,
     document.getElementById('root')
 );
