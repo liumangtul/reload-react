@@ -8,6 +8,9 @@ import Hello from './component/Hello.js';
 import Clock from './component/Clock.js';
 import Toggle from './component/Toggle.js';
 import NumList from './component/NumList.js';
+import NameForm from './component/NameForm.js';
+import NameForm2 from './component/NameForm2.js';
+import Calculator from './component/Calculator/Calculator.js';
 
 ReactDOM.render(
     <div>
@@ -17,6 +20,9 @@ ReactDOM.render(
         <Clock></Clock>
         <Toggle></Toggle>
         <NumList></NumList>
+        <NameForm></NameForm>
+        <NameForm2></NameForm2>
+        <Calculator></Calculator>
     </div>,
     document.getElementById('root')
 );
