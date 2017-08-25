@@ -11,7 +11,8 @@ var PRODUCTS = [
     {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
+const root = document.getElementById('product');
 ReactDOM.render(
     <App products={PRODUCTS}/>,
-    document.getElementById('product')
+    root
 );

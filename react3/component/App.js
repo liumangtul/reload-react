@@ -4,8 +4,8 @@ import ProductTable from './ProductTable.js';
 
 export default class App extends React.Component{
     render(){
-        return(
-            <div className="product">
+        return (
+            <div>
                 <SearchBar />
                 <ProductTable products={this.props.products}/>
             </div>
