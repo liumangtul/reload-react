@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpackDevServer=require('webpack-dev-server');
 
 var config = {
     /*entry:'./react1/index.js',*/

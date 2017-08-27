@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from 'react-router';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
-import App from './component/App';
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import NavBar from './component/NavBar.js';
+import App from './component/App.js';
+import AboutUs from './component/AboutUs.js';
+import Me from './component/Me.js';
 
-React.render(
+ReactDOM.render(
     <Router>
-        <Route path="/" component={App}/>
+        <div>
+            <NavBar/>
+            <Route path="/" component={App}/>
+            <Route page="/AboutUs" component={AboutUs}/>
+            <Route page="/Me" component={Me}/>
+        </div>
     </Router>,
     document.getElementById('router')
 );
