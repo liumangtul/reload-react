@@ -8,7 +8,7 @@ var config = {
     /*entry:'./react1/index.js',*/
     entry:{
         index:'./router/index.js',
-        vendor:['react','react-dom','react-router']
+        vendor:['react','react-dom','react-router','react-router-dom']
     },
     //babel重要的loader在这里
     module: {
@@ -36,7 +36,7 @@ var config = {
         new CleanWebpackPlugin(['router/dist']),
         new HtmlWebpackPlugin({
             title:'React',
-            filename:'./router.html',
+            filename:'./index.html',
             template:'./router.html'
         }),
         new webpack.optimize.CommonsChunkPlugin({
