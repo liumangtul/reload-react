@@ -10,7 +10,8 @@
     "react2": "webpack --config webpack-config.react2.js",
     "react3": "webpack --config webpack-config.react3.js",
     "router": "webpack --config webpack-config.router.js",
-    "build-react": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.router.js"
+    "build-react": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.router.js",
+    "build-redux": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux.js"
   },
   "repository": {
     "type": "git",
@@ -36,8 +37,11 @@
     "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
