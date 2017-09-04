@@ -26,3 +26,10 @@ react-router API：
 react 小书
 http://huziketang.com/books/react/
 https://segmentfault.com/a/1190000009004928
+
+http://bluesh.me/blog/2017/07/16/react-handbook/
+
+阮一峰-redux
+http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html
+http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html
+http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html
