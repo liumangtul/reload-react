@@ -12,7 +12,8 @@
     "router": "webpack --config webpack-config.router.js",
     "build-react": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.router.js",
     "build-redux": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux.js",
-    "redux2": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux2.js"
+    "redux2": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux2.js",
+    "redux3": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux3.js"
   },
   "repository": {
     "type": "git",
