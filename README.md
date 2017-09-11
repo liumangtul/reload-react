@@ -38,3 +38,9 @@ http://space.bilibili.com/1914909#!/
 
 ## fetch API
 https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API
+
+## 使用路由-BrowserRouter时，刷新页面挂掉的问题，服务器端未处理
+### 找到解决方案了，具体原因和解决方案如下：
+#### 1：使用的是react-router的browserHistory，同时也在使用者webpack-dev-server，所以就要在启动webpack-dev-server时，要加--history-api-fallback参数
+#### 2：或者也可以使用react-router的hashHistory，不需要加--history-api-fallback参数就可以，然而这样有个问题就是url可视性太不友好了，全是hash了的；
+#### 3：如果使用了nginx，可以使用rewrite，有人推荐，但是自己还没有实验呢。。。
