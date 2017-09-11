@@ -7,7 +7,7 @@ const webpackDevServer=require('webpack-dev-server');
 var config = {
     /*entry:'./react1/index.js',*/
     entry:{
-        index:'./redux4/app/index.js',
+        index:'./redux4/index.js',
         vendor:['react','react-dom','react-router','react-router-dom','react-redux','redux']
     },
     //babel重要的loader在这里
@@ -33,7 +33,7 @@ var config = {
     },
     devtool:'inline-source-map',
     plugins:[
-        new CleanWebpackPlugin(['redux4/app/dist']),
+        new CleanWebpackPlugin(['redux4/dist']),
         new HtmlWebpackPlugin({
             title:'Redux',
             filename:'./index.html',
@@ -49,7 +49,7 @@ var config = {
     ],
     output:{
         filename:'[name].js',
-        path: path.resolve(__dirname,'redux4/app/dist')
+        path: path.resolve(__dirname,'redux4/dist')
     },
     devServer: {
         contentBase: './',
