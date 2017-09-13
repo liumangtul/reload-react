@@ -16,7 +16,9 @@
     "redux3": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux3.js",
     "redux4": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux4.js --history-api-fallback",
     "asyn": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.asyn.js --history-api-fallback",
-    "asyn2": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.asyn2.js --history-api-fallback"
+    "asyn2": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.asyn2.js --history-api-fallback",
+    "build-asyn2": "webpack --config webpack-config.asyn2.js",
+    "iScroll": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.iscroll.js --history-api-fallback"
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,7 @@
     "css-loader": "^0.28.5",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
+    "iscroll": "^5.2.0",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
@@ -47,6 +50,7 @@
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "reactjs-iscroll": "^0.3.2",
     "redux": "^3.7.2",
     "redux-devtools": "^3.4.0",
     "redux-logger": "^3.0.6",

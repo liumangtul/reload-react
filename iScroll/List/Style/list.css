@@ -1,0 +1,49 @@
+*{margin:0;padding:0;}
+#iscroll-bar{
+    position: relative;
+    border:1px solid #000;
+    height:200px;
+    overflow: hidden;
+}
+#iscroll-list{
+    position: relative;
+    z-index: 2;
+    width:100%;
+    min-height: 100px;
+}
+#iscroll-list ul{
+    position: relative;
+    z-index: 2;
+}
+.updata-box,.more-box{
+    position: absolute;
+    left:0;
+    width:100%;
+    background:red;
+    color:#fff;
+    font-size:20px;
+    line-height:30px;
+    text-align: center;
+}
+.updata-box{
+    top:-30px;
+}
+.more-box{
+    bottom:-30px;
+}
+
+#iscroll-list li{
+    line-height: 50px;
+    border-bottom:2px solid blue;
+    font-size:20px;
+}
+
+.hidden{
+    display: none;
+}
+.succ{
+    background:pink;
+}
+.err{
+    background:green;
+}

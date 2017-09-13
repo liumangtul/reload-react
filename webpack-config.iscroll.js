@@ -7,7 +7,7 @@ const webpackDevServer=require('webpack-dev-server');
 var config = {
     /*entry:'./react1/index.js',*/
     entry:{
-        index:'./asyn2/index.js',
+        index:'./iScroll/index.js',
         vendor:['react','react-dom','react-router','react-router-dom','react-redux','redux','redux-thunk','isomorphic-fetch','redux-logger']
     },
     //babel重要的loader在这里
@@ -26,18 +26,18 @@ var config = {
                 test:/\.css$/,
                 use:[
                     'style-loader',
-                    'css-loader?modules'
+                    'css-loader'/*'css-loader?modules'*/
                 ]
             }
         ]
     },
     devtool:'inline-source-map',
     plugins:[
-        new CleanWebpackPlugin(['asyn2/dist']),
+        new CleanWebpackPlugin(['iScroll/dist']),
         new HtmlWebpackPlugin({
             title:'ASYN',
             filename:'./index.html',
-            template:'./asyn2/index.html'
+            template:'./iScroll/index.html'
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name:'vendor'
@@ -55,7 +55,7 @@ var config = {
     ],
     output:{
         filename:'[name].js',
-        path: path.resolve(__dirname,'asyn2/dist')
+        path: path.resolve(__dirname,'iScroll/dist')
     },
     devServer: {
         contentBase: './',

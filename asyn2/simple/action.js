@@ -28,12 +28,12 @@ const fetchEntry =()=>{
     return (dispatch,getState) =>{
         const isFetching = getState().data.isFetching;
         if(isFetching)return;
-        dispatch(fetchEntryPending());
+        dispatch(dispatch(fetchEntryPending()));
         setTimeout(()=>{
             return fetch('./asyn2/data/simple.json')
                 .then(response=>response.json())
-                .then(data=>dispatch(fetchEntrySuccess(data)))
-                .catch(error=>dispatch(fetchEntryFaild(error)));
+                .then(data=>dispatch(dispatch(fetchEntrySuccess(data))))
+                .catch(error=>dispatch(dispatch(fetchEntryFaild(error))));
         },3000);
     }
 };
