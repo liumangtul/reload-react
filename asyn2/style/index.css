@@ -1,3 +1,4 @@
 *{margin:0;padding:0;}
 #simple{border:1px solid #ccc;width:500px;padding:10px;margin:10px auto;}
 #simple h1{color:green;text-align:center;line-height:30px;}
+.title{border:1px solid #ccc;padding:10px;}

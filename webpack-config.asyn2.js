@@ -26,7 +26,7 @@ var config = {
                 test:/\.css$/,
                 use:[
                     'style-loader',
-                    'css-loader'
+                    'css-loader?modules'
                 ]
             }
         ]
@@ -45,7 +45,13 @@ var config = {
         new webpack.optimize.CommonsChunkPlugin({
             name:'runtime'
         }),
-        new webpack.HotModuleReplacementPlugin()
+        //压缩
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
     ],
     output:{
         filename:'[name].js',
