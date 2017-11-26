@@ -1,0 +1,28 @@
+.formSes input {
+  border: 1px solid red;
+}
+.formSes div img {
+  width: 300px;
+}
+.formSes div p {
+  width: 200px;
+  height: 200px;
+  background: url(./images/b.671d782c.jpg) no-repeat left top;
+}
+.article {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+#home {
+  background: red;
+}
+#home h1 {
+  color: blue;
+  font-size: 30px;
+  border: 1px solid #000;
+  padding: 10px;
+  line-height: 40px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL2FwcC5jNmFkNDQ4ZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
