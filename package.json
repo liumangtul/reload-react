@@ -17,12 +17,8 @@
     "redux4": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.redux4.js --history-api-fallback",
     "asyn": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.asyn.js --history-api-fallback",
     "asyn2": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.asyn2.js --history-api-fallback",
-<<<<<<< HEAD
     "build-asyn2": "webpack --config webpack-config.asyn2.js",
     "iScroll": "webpack-dev-server --hot --inline --content-base ./ --config webpack-config.iscroll.js --history-api-fallback"
-=======
-    "build-asyn2": "webpack --config webpack-config.asyn2.js"
->>>>>>> f601959a963707ece56cffbf34f0f7a3324d40d6
   },
   "repository": {
     "type": "git",
